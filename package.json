@@ -1,7 +1,7 @@
 {
   "name": "ep_disable_reset_authorship_colours",
   "description": "Disable The reset authorship colours button",
-  "version": "0.0.27",
+  "version": "0.0.28",
   "repository": {
     "type": "git",
     "url": "https://github.com/JohnMcLear/ep_disable_reset_authorship_colours"
@@ -12,15 +12,14 @@
     "url": "http://mclear.co.uk"
   },
   "contributors": [],
-  "dependencies": {},
   "funding": {
     "type": "individual",
     "url": "https://etherpad.org/"
   },
   "devDependencies": {
-    "eslint": "^8.57.0",
+    "eslint": "^8.57.1",
     "eslint-config-etherpad": "^4.0.4",
-    "typescript": "^5.4.2"
+    "typescript": "^5.9.3"
   },
   "scripts": {
     "lint": "eslint .",
