@@ -4,7 +4,7 @@
   "version": "0.0.35",
   "repository": {
     "type": "git",
-    "url": "https://github.com/JohnMcLear/ep_disable_reset_authorship_colours"
+    "url": "https://github.com/ether/ep_disable_reset_authorship_colours.git"
   },
   "author": {
     "name": "John McLear",
