@@ -10,4 +10,5 @@ exports.postAceInit = (hookName, args, cb) => {
   }
   // hide the item
   item.remove();
+  return cb();
 };
