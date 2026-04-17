@@ -2,7 +2,9 @@
   "parts":[
     {
       "name": "disable_reset_authorship_colours",
-      "hooks": {},
+      "hooks": {
+        "clientVars": "ep_disable_reset_authorship_colours/index:clientVars"
+      },
       "client_hooks": {
         "postAceInit": "ep_disable_reset_authorship_colours/static/js/disable_reset_authorship_colours:postAceInit"
       }
