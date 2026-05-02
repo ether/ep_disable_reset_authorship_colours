@@ -1,4 +1,5 @@
 {
+  "disables": ["@feature:clear-authorship"],
   "parts":[
     {
       "name": "disable_reset_authorship_colours",

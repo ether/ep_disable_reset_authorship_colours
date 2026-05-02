@@ -69,4 +69,11 @@ jobs:
           done
           cd src
           pnpm exec playwright install chromium --with-deps
-          pnpm run test-ui --project=chromium
+          # Use the declared-disables helper instead of plain test-ui:
+          # ep.json declares `disables: ["@feature:clear-authorship"]`,
+          # so the helper runs two passes — regression (everything not
+          # tagged @feature:clear-authorship must pass) + honesty (every
+          # test tagged @feature:clear-authorship must FAIL because the
+          # plugin disables the clear-authorship-colours button).
+          # See doc/PLUGIN_FEATURE_DISABLES.md.
+          ../bin/run-frontend-tests-with-disables.sh -- --project=chromium
